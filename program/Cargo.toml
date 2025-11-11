@@ -1,0 +1,25 @@
+[package]
+name = "stricter-abi-bug"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[features]
+default = ["perf"]
+perf = []
+
+[dependencies]
+pinocchio = "0.9.2"
+pinocchio-system = "0.3.0"
+
+[dev-dependencies]
+mollusk-svm = "0.7.0"
+mollusk-svm-programs-token = "0.7.0"
+spl-token-2022 = "8.0.1"
+solana-precompiles = "2.2.2"
+solana-account = "3.0.0"
+solana-pubkey = "3.0.0"
+agave-feature-set = "3.0.0"
+solana-program = "3.0.0"
