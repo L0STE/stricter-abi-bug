@@ -32,6 +32,8 @@ fn process_instruction(
 
     match discriminator {
         0x01 => instructions::reproduction1::process_instruction(accounts),
+        0x02 => instructions::reproduction2::process_instruction(accounts),
+        0x03 => instructions::reproduction3::process_instruction(accounts),
         _ => Err(ProgramError::InvalidInstructionData),
     }
 }
